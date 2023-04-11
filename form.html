@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <!-- link file css -->
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="b-img">
+        <img src=""/>
+        <div class="container">
+        <header class="header">
+            <h1 id="title">
+                Survey Form
+            </h1>
+            <p id="description">
+                Please help us improve our service by submitting your answers to the survey form, thank for your time.
+            </p>
+        </div>
+        </header>
+        <div class="container">
+        <form id="survey-form" action="">
+            <!-- text section -->
+            <div class=""form-group"> 
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>            
+            <!-- end of text section! -->
+            
+            <!-- e-mail section -->
+            <div class=""form-group"> 
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <!-- End of e-mail section -->
+            
+            <!--enter number section-->
+            <div class=""form-group"> 
+                <label for="phone">Phone number</label>
+                <input type="number" name="phone" id="phone" class="form-control" placeholder="Enter your phone number" required>
+            </div>
+            <!-- end of enter number section-->
+
+            <!-- Address section -->
+            <div class=""form-group"> 
+                <label for="address">Address
+                    <span class="clue"> (optional) </span>
+                </label>
+                <input type="text" name="address" id="address" class="form-control" placeholder="Enter your home address" required>
+            </div>
+            <!-- End of Address section -->
+
+            <!-- Select selection -->
+            <div class=""form-group">
+                <p id="quest"> Which option best describe your role? </p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option value="" disabled selected > Select current role </option>
+                    <option value="Student"> Student </option>
+                    <option value="Teacher"> Teacher </option>
+                    <option value="Graduation student"> Graduation student </option>
+                    <option value="Part-time worker"> Part-time worker </option>
+                    <option value="Full-time worker"> Full-time worker </option>
+                </select>
+            </div>
+            <!-- end of selection -->
+
+            <!-- Radio button section-->
+            <div class="form-group">
+                <p id="quest"> How did you get into coding? </p>
+                <label for="">
+                    <input type="radio" name="source" value="friends" class="inputradio" checked /> Friends
+                </label>
+
+                <label for="">
+                    <input type="radio" name="source" value="Internet ads" class="inputradio" /> Internet Ads
+                </label>
+
+                <label for="">
+                    <input type="radio" name="source" value="Social Media" class="inputradio" /> Social Media
+                </label>
+
+                <label for="">
+                    <input type="radio" name="source" value="Movies" class="inputradio" /> Movies
+                </label>
+                
+                <label for="">
+                    <input type="radio" name="source" value="Other" class="inputradio" /> Other
+                </label>
+            </div>
+            <!-- End of radio button section-->
+
+            <!-- checkbox section -->
+            <div class="form-group">
+                <p id="quest"> What would you like to see yourself improving in the near future? </p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Front-end-dev" /> Front-end developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Back-end-dev" /> Back-end developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Full-stack-dev" /> Fullstack developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Game dev" /> Game developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Software dev" /> Software engineering
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="Other technologies" /> Other technologies
+                </label>
+            </div>
+            <!--end checkbox section-->
+
+            <!--textarea section -->
+            <div class="form-group">
+                <p id="quest"> Please, give us your feedback so we can improve our way of better solving issues </p>
+                <textarea id="feedback" name="feedback" cols="30" rows="5" class="textarea" placeholder="Fell free to give us your thoughts"></textarea>
+            </div>
+            <!--end of textarea-->
+
+            <!-- submit button -->
+            <div class="form-group">
+                <button type="submit" id="Submit" class="bts"> Submit </button>
+
+            </div>
+
+            <!-- End of submit button section -->
+
+        </form>
+    </div>
+</div>
+</body>
+</html>
